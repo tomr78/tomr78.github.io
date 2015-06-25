@@ -1,0 +1,351 @@
+@import "normalize.css";
+@import "fonts.css";
+@import "taille.css";
+@import  "style-2.css";
+/**
+ * ELEMENTS GENERIQUES
+ ****************************************************/
+body
+{
+	background: #fff;
+	color: #444545;
+	font-size: 15px;
+	font-family: BentonSans-Regular, Helvetica, sans-serif;
+	line-height: 1.4;
+
+}
+
+a
+{
+	color: #444545;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus
+{
+	text-decoration: underline;
+}
+
+figure
+{
+	margin: 0;
+}
+
+img
+{
+	max-width: 100%;
+}
+
+.gabarit
+{
+	margin: 0 auto;
+	width: 1144px;
+}
+
+h1, h2, h3, h4, h5, h6, strong
+{
+
+	font-family: BentonSans-Bold, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+/**
+ * HEADER
+ ****************************************************/
+#header
+{
+	overflow: hidden;
+}
+
+#header h1,
+#header nav
+{
+	float: left;
+}
+
+
+/* Logo */
+#header h1
+{
+	margin: 25px 30px 0 20px;
+}
+
+/* Navigation */
+#header nav
+{
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+#header nav ul
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#header nav li
+{
+	float: left;
+}
+
+#header nav a
+{
+	background: #fff;
+	display: block;
+	line-height: 90px;
+	padding: 0 30px;
+}
+
+#header nav a:hover,
+#header nav a:focus
+{
+	background: #bab6b6;
+	text-decoration: none;
+}
+
+
+#header nav .actif a
+{
+	background: #eb8d29;
+	color: #fff;
+}
+
+/* Facebook */
+#header .facebook
+{
+	float: right;
+	margin: 25px 20px 0 0;
+}
+/* bandeau*/
+
+#bandeau img
+{
+	width: 100%;
+	height: 100%
+}
+/*
+PAGE********************************************************************************/
+#page
+{
+	margin:0px auto;
+	width: 1200px;
+	font-size: 17px;
+
+}
+
+
+#sous-section
+{
+	text-align: center;
+}
+
+/* Contenu
+********************************************
+*/
+ #contenu .image
+{
+	margin-top: 70px;
+	text-align: center;
+	padding-bottom: 30px
+}
+
+
+#contenu a
+{
+	text-decoration: none;
+	color: #9f9d93
+}
+
+#contenu a:hover
+ {
+ 	text-decoration: underline;
+ }
+
+#contenu .centre
+{
+	text-align: center;
+	margin:0px;
+}
+/*
+POLES*****************************************************************************/
+#pole
+{
+	overflow: hidden;
+}
+#pole p
+{
+	display: inline-block;
+	width:195px;
+	text-align: center;
+	margin: 0
+}
+#pole h4
+{
+	display: inline-block;
+}
+#pole img
+{
+	margin: 10px
+}
+#pole ul
+{
+	list-style:none;
+	float: left;
+	width:20%;
+	margin-bottom: 155px
+}
+#pole li
+{
+	line-height: 1.5
+}
+/*
+FOOTER
+*****************************************************************************************************************************************/
+#footer
+{
+	overflow: hidden;
+	text-align: center;
+}
+
+#footer .logo_footer
+{
+	margin-top: 110px;
+	margin-bottom: 40px
+}
+
+#footer ul
+{
+	list-style: none;
+}
+
+#footer li
+{
+	float: left;
+	width: 25%;
+	text-align:center;
+}
+#footer p
+{
+	padding: 50px;
+	font-size: 12px;
+	text-align: center;
+}
+
+
+/*
+RESPONSIVE
+******************************************************************************************************************************************************************/
+
+
+
+/* Petit écran de bureau - Tablette paysage */
+@media screen and (max-width: 1200px)
+{
+	.gabarit
+	{
+		width: 960px;
+	}
+	#page
+	{
+		width: 960px
+	}
+
+}
+
+/* Tablette portrait */
+@media screen and (max-width: 1024px)
+{
+	.gabarit
+	{
+		width: 740px;
+	}
+	#page
+	{
+		width: 740px;
+	}
+
+	#header nav ul
+	{
+		font-size: 12px;
+
+	}
+
+
+	#header nav li
+	{
+
+		line-height: 1.4;
+		width: 25%;
+	}
+
+	#header nav li
+	{
+		width: auto;
+	}
+
+	#header nav a
+	{
+		padding: 0 20px;
+	}
+
+	#pole ul
+	{
+		float: none;
+		width:auto;
+		padding: 0;
+	}
+
+}
+/* Mobile */
+@media screen and (max-width: 768px)
+{
+	.gabarit
+	{
+		width: auto;
+	}
+	#page
+	{
+		width: auto;
+	}
+
+	#header nav a
+	{
+		padding: 0 10px;
+		line-height: 75px;
+
+	}
+	#header h1
+	{
+		text-align: center;
+		float: none;
+	}
+	#header .facebook
+	{
+		margin: 20px 10px 0px 0;
+	}
+
+	#footer li
+	{
+		float:none;
+		display: inline
+	}
+
+	#footer li
+	{
+		margin: 0px 25px 0px 0px;
+		line-height: 1.6
+	}
+
+	#header nav li
+	{
+		float:none;
+
+	}
+
+	#header nav
+	{
+		float: none;
+		text-align: center;
+	}
