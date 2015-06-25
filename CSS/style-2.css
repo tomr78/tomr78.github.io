@@ -65,6 +65,23 @@ ul
 	margin: 0px auto;
 }
 
+#image_fin
+{
+	font-size: 17px;
+	text-align: center;
+	background: #e26910 url(../image/bandeau.jpg) 50% 0 no-repeat;
+	color: #FFF;
+	margin:0;
+	height: 297px;
+	line-height: 1.5;
+}
+
+#image_fin p
+{
+	width: 66.67%;
+	margin: 0 auto;
+	padding: 125px 0 0;
+}
 
 
 @media screen and (max-width: 1024px)
@@ -98,12 +115,18 @@ ul
 	}
 	p
 	{
-		padding-left: 15px;
+		/*padding-left: 15px;*/
 		font-size: 15px;
 	}
 	#contenu
 	{
 		width: 100%;
+	}
+	#image_fin p
+	{
+		width: 100%;
+		height:auto;
+
 	}
 
 }

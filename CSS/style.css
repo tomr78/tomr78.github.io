@@ -308,6 +308,7 @@ RESPONSIVE
 	#page
 	{
 		width: auto;
+		padding: 0 10px;
 	}
 
 	#header nav a
@@ -349,3 +350,21 @@ RESPONSIVE
 		float: none;
 		text-align: center;
 	}
+
+	#pole
+	{
+		margin-bottom: 50px;
+	}
+
+	#pole ul
+	{
+		margin: 0;
+	}
+
+	#pole ul + ul
+	{
+		padding-top: 20px;
+		margin-top: 20px;
+		border-top: 1px solid #ccc;
+	}
+}
